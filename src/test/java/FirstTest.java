@@ -35,5 +35,7 @@ public class FirstTest {
         wd.findElement(By.name("user-name")).sendKeys("standard_user");
         wd.findElement(By.name("password")).sendKeys("secret_sauce");
         wd.findElement(By.id("login-button")).click();
+        System.out.println("Items on the page: " + wd.findElements(By.xpath("//*[@class='inventory_item']")).size());
+
     }
 }
